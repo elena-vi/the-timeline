@@ -20,11 +20,11 @@ We believe this to be a very unique and exciting idea.
 - [x] Each item in the timeline contains a message
 - [x] Each item in the timeline contains the time of submission
 - [x] Each item in the timeline contains a way to delete the post
-- [ ] Delete functionality is not triggered by a GET request
+- [x] Delete functionality is not triggered by a GET request
 - [x] Message can contain newlines, new lines are rendered
 - [x] Time is displayed in format of "20 minutes ago", "5 days ago"
-- [ ] Clicking delete button results in item being deleted
-- [ ] Clicking delete button results in message being displayed
+- [x] Clicking delete button results in item being deleted
+- [x] Clicking delete button results in message being displayed
 - [x] Code is version controlled
 - [ ] Feature test: successful submission are passing
 - [ ] Feature test: unsuccessful submission are passing

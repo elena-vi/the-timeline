@@ -19,8 +19,6 @@
 - else
   - @messages.each do |msg|
     .msg
-      %h4
-        = simple_format(msg.message)
-      %p
-        Created At: #{"#{time_ago_in_words(msg.created_at)} ago"}
-      = button_to "delete", msg, method: :delete
+      %h4 = simple_format(msg.message)
+      %p Created At: #{"#{time_ago_in_words(msg.created_at)} ago"}
+      = button_to "Delete", msg, method: :delete, data: {confirm: "Are you sure you want to delete the following message: \n #{msg.message}"}
