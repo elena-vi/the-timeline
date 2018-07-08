@@ -7,6 +7,7 @@ Users will eventually be able to follow other users and are in turn able to be f
 
 We believe this to be a very unique and exciting idea.
 
+
 ## Checklist
 - [ ] The timeline appeared on the homepage
 - [ ] The form appeared on the homepage
@@ -29,7 +30,7 @@ We believe this to be a very unique and exciting idea.
 - [ ] Feature test: unsuccessful submission are passing
 - [ ] Feature test: message display are passing
 - [ ] Feature test: message deletion are passing
-- [ ] Unit test: both validation rules are tested and passing
+- [x] Unit test: both validation rules are tested and passing
 - [ ] A nicely readable assertion library is used
 - [ ] README contains instructions for running application
 - [ ] README contains instructions for running tests
