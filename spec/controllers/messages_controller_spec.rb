@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe MessagesController, type: :controller do
-  describe "GET index" do
+  describe "GET" do
     it "set's @messages" do
-      msg = Message.create
+      msg = Message.create(message: "Lorem.. ")
       get :index
       expect(assigns(:messages)).to eq([msg])
     end
@@ -14,15 +14,12 @@ RSpec.describe MessagesController, type: :controller do
     end
   end
 
-  describe "POST create" do
+  describe "POST" do
     it "creates a message and redirects to the timeline" do
 
       post "create", message: {message: "My message"}
 
       expect(response).to render_template(:index)
-
-      expect(response.body).to include("Message was successfully created.")
     end
-
   end
 end

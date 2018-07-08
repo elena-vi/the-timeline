@@ -25,7 +25,7 @@ RSpec.describe Message, type: :model do
 
   context "Destroy" do
     it "deletes a message" do
-      msg = Message.new(msg text: "Lorem ipsum dolor sit amet")
+      msg = Message.new(message: "Lorem ipsum dolor sit amet")
       msg.save
       expect { msg.destroy }.to change { Message.count }.by(-1)
     end

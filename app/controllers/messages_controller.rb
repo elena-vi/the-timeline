@@ -1,6 +1,7 @@
 class MessagesController < ApplicationController
+  before_action :set_messages, except: :destroy
+
   def index
-    @messages = Message.all.order(created_at: :desc)
   end
 
   def create
@@ -10,7 +11,7 @@ class MessagesController < ApplicationController
     else
       flash[:error] = new_msg.errors.full_messages.join(', ')
     end
-    redirect_to messages_path
+    render :index
   end
 
   def destroy
@@ -20,5 +21,9 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:message)
+  end
+
+  def set_messages
+    @messages = Message.all.order(created_at: :desc)
   end
 end
