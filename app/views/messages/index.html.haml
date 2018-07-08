@@ -1,0 +1,26 @@
+%h2 The Timeline
+
+- if flash[:success]
+  .success=flash[:success]
+
+- if flash[:error]
+  .error=flash[:error]
+
+= form_for :message do |f|
+  = f.label :message
+  = f.text_area :message
+  = f.submit
+
+%hr/
+%hr/
+
+- if @messages.length == 0
+  No messages, create some
+- else
+  - @messages.each do |msg|
+    .msg
+      %h4
+        = simple_format(msg.message)
+      %p
+        Created At: #{"#{time_ago_in_words(msg.created_at)} ago"}
+      = button_to "delete", msg, method: :delete

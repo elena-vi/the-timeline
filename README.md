@@ -9,23 +9,23 @@ We believe this to be a very unique and exciting idea.
 
 
 ## Checklist
-- [ ] The timeline appeared on the homepage
-- [ ] The form appeared on the homepage
-- [ ] The form displayed specific error if the message is empty
-- [ ] The form displayed specific error if the message is more than 150 characters
-- [ ] The timeline displayed message if form submitted without errors
-- [ ] The page displayed a message if form submitted without errors
-- [ ] The timeline appeared below the form
-- [ ] The timeline is ordered in descending chronological order
-- [ ] Each item in the timeline contains a message
-- [ ] Each item in the timeline contains the time of submission
-- [ ] Each item in the timeline contains a way to delete the post
+- [x] The timeline appeared on the homepage
+- [x] The form appeared on the homepage
+- [x] The form displayed specific error if the message is empty
+- [x] The form displayed specific error if the message is more than 150 characters
+- [x] The timeline displayed message if form submitted without errors
+- [x] The page displayed a message if form submitted without errors
+- [x] The timeline appeared below the form
+- [x] The timeline is ordered in descending chronological order
+- [x] Each item in the timeline contains a message
+- [x] Each item in the timeline contains the time of submission
+- [x] Each item in the timeline contains a way to delete the post
 - [ ] Delete functionality is not triggered by a GET request
-- [ ] Message can contain newlines, new lines are rendered
-- [ ] Time is displayed in format of "20 minutes ago", "5 days ago"
+- [x] Message can contain newlines, new lines are rendered
+- [x] Time is displayed in format of "20 minutes ago", "5 days ago"
 - [ ] Clicking delete button results in item being deleted
 - [ ] Clicking delete button results in message being displayed
-- [ ] Code is version controlled
+- [x] Code is version controlled
 - [ ] Feature test: successful submission are passing
 - [ ] Feature test: unsuccessful submission are passing
 - [ ] Feature test: message display are passing

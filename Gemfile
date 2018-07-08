@@ -43,6 +43,9 @@ end
 group :test do
   gem 'rspec-rails'
   gem "nyan-cat-formatter"
+  gem 'rails-controller-testing'
+  gem 'factory_girl_rails'
+
 end
 
 
