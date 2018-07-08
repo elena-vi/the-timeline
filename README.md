@@ -26,9 +26,9 @@ We believe this to be a very unique and exciting idea.
 - [x] Clicking delete button results in item being deleted
 - [x] Clicking delete button results in message being displayed
 - [x] Code is version controlled
-- [ ] Feature test: successful submission are passing
-- [ ] Feature test: unsuccessful submission are passing
-- [ ] Feature test: message display are passing
+- [x] Feature test: successful submission are passing
+- [x] Feature test: unsuccessful submission are passing
+- [x] Feature test: message display are passing
 - [ ] Feature test: message deletion are passing
 - [x] Unit test: both validation rules are tested and passing
 - [ ] A nicely readable assertion library is used

@@ -38,10 +38,19 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
     arel (7.1.4)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.2)
+    capybara (2.7.1)
+      addressable
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -53,11 +62,6 @@ GEM
     diff-lcs (1.3)
     erubis (2.7.0)
     execjs (2.7.0)
-    factory_girl (4.7.0)
-      activesupport (>= 3.0.0)
-    factory_girl_rails (4.7.0)
-      factory_girl (~> 4.7.0)
-      railties (>= 3.0.0)
     ffi (1.9.25)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -92,6 +96,9 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -102,6 +109,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     nyan-cat-formatter (0.11)
       rspec (>= 2.99, >= 2.14.2, < 4)
+    public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
     rack-test (0.6.3)
@@ -203,14 +211,16 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   byebug
+  capybara
   coffee-rails (~> 4.2)
-  factory_girl_rails
   haml-rails
   jbuilder (~> 2.5)
   jquery-rails
