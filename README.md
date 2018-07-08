@@ -7,6 +7,20 @@ Users will eventually be able to follow other users and are in turn able to be f
 
 We believe this to be a very unique and exciting idea.
 
+## Running the prototype
+Clone and set up:
+```
+git clone https://github.com/elena-vi/the-timeline.git && cd the-timeline/ && bundle && rake db:setup
+```
+To run locally on http://localhost:3000/ run:
+```
+rails s
+```
+To run tests run: 
+```
+rspec
+```
+
 
 ## Checklist
 - [x] The timeline appeared on the homepage
